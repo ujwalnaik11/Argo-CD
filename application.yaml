@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myapp-argo-app
+  namespace: argocd
+spec:
+  destination:
+    name: ''
+    namespace: myapp
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: dev
+    repoURL: 'https://github.com/ujwalnaik11/Argo-CD.git'
+    targetRevision: main
+  project: default
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
