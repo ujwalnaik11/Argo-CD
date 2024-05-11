@@ -1,16 +1,13 @@
-// This YAML code defines a Kubernetes Deployment resource named "myapp" that will manage two replicas
-// of a container running the "naikujwal/node-app:1.0" image. The Deployment ensures that the specified
-// number of replicas are always running and handles updates and scaling of the application. The
-// container within the Deployment exposes port 3000 for communication.
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp
 spec:
+  replicas: 1
+  revisionHistoryLimit: 3
   selector:
     matchLabels:
       app: myapp
-  replicas: 2
   template:
     metadata:
       labels:
