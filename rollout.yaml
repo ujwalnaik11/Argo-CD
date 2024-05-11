@@ -18,14 +18,14 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: myapp
+      app: rollouts-demo
   template:
     metadata:
       labels:
-        app: myapp
+        app: rollouts-demo
     spec:
       containers:
-      - name: myapp
+      - name: rollouts-demo
         image: 
         ports:
         - name: http
