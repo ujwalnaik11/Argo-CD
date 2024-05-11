@@ -7,10 +7,10 @@ spec:
   destination:
     name: ''
     namespace: myapp
-    server: 'https://kubernetes.default.svc'
+    server: https://kubernetes.default.svc
   source:
     path: dev
-    repoURL: 'https://github.com/ujwalnaik11/Argo-CD.git'
+    repoURL: https://github.com/ujwalnaik11/Argo-CD
     targetRevision: main
   project: default
   syncPolicy:
