@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: canary-realtime
+  namespace: rolloutdemo
+spec:
+  destination:
+    name: ''
+    namespace: rolloutdemo
+    server: https://kubernetes.default.svc
+  source:
+    path: rollout-canary
+    repoURL: https://github.com/ujwalnaik11/Argo-CD
+    targetRevision: main
+  project: default
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
