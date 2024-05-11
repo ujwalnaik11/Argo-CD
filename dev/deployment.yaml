@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: naikujwal/node-app:1.0
+        image: naikujwal/node-app:2.0
         ports:
         - containerPort: 3000
