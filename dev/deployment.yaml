@@ -20,4 +20,4 @@ spec:
       - name: myapp
         image: naikujwal/node-app:1.0
         ports:
-        - containerPort: 8080
+        - containerPort: 80
