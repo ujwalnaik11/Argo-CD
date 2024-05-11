@@ -1,6 +1,3 @@
-// This YAML code defines a Kubernetes Service named "myapp-service" for an application called "myapp".
-// The service is configured to route traffic to pods with the label "app:myapp" on port 3000 using
-// TCP protocol.
 apiVersion: v1
 kind: Service
 metadata:
