@@ -36,7 +36,7 @@ Install Argo CD and Argo Rollouts on Your Kubernetes Cluster using helm. If you 
 
 
 
-- Task 4 : Cleanup Strategy
+- Task 4 : Cleanup - 
 Use background deletion with a cascading propagation policy when deleting applications.
 
 
@@ -44,7 +44,7 @@ Use background deletion with a cascading propagation policy when deleting applic
 ## Challenges & Solution
 
 - Challenge 1 : k8s manifest files with comments throws error "cannot unmarshal deployment.yaml file" when creating argoCD pipeline.
-Solution: Remove all the comments in k8s manifest files.
+( Solution: Remove all the comments in k8s manifest files.)
 
 
 
