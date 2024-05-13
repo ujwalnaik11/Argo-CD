@@ -46,6 +46,8 @@ Use background deletion with a cascading propagation policy when deleting applic
 - Challenge 1 : k8s manifest files with comments throws error "cannot unmarshal deployment.yaml file" when creating argoCD pipeline.
 ( Solution: Remove all the comments in k8s manifest files.)
 
+- Challenge 2 : Ensuring that automated processes do not compromise the stability and security of the Kubernetes cluster.
+( solution : Learnt and applied various sync policy like Automatic Self-Healing, Automatic Pruning, Preventing Resource Deletion and selective sync )
 
 
  
